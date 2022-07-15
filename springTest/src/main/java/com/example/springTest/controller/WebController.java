@@ -30,10 +30,14 @@ public class WebController {
     }
 
     @GetMapping("/customers/edit/{id}")
-    public String editCustomers(@PathVariable Integer id,
-                                CustomerDto customerDto){
-        customerService.editCustomer(id, customerDto);
-        return "redirect:/web/customers";
+    public String editCustomers(@PathVariable Integer id){
+        customerService.getCustomerById(id);
+        return "edit_customer";
     }
 
+    @GetMapping("customers/delete/{id}")
+    public String deleteById(@PathVariable Integer id){
+        customerService.deleteById(id);
+        return "redirect:/web/customers";
+    }
 }

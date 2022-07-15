@@ -33,8 +33,11 @@
                 <td th:text="${customer.getSurname()}"></td>
                 <td th:text="${customer.getAge()}"></td>
                 <td>
-                    <a th:href="@{/customer/edit/{id}(id=${customer.id})}"
+                    <a th:href="@{/web/customers/edit/{id}(id=${customer.id})}"
                     class="btn btn-primary">Update</a>
+
+                    <a th:href = "@{/web/customers/delete/{id}(id=${customer.id})}"
+                       class = "btn btn-danger">Delete</a>
                 </td>
             </tr>
             </tbody>
