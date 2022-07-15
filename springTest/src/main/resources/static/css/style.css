@@ -1,0 +1,10 @@
+body{
+    background-image: url('../image/bodyBack.jpg');
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+#regBack{
+    background-image: url('../image/portfolioBack.jpg');
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
