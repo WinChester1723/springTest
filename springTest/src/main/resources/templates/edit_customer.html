@@ -14,7 +14,7 @@
         <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card" style="background: dimgrey">
             <h2 class="text-center" style="color: black">Update Customer</h2>
             <div class="card-body" style="color: black">
-                <form>
+                <form th:action="@{/main/customers/put/edit/{id}(id=${customer.id})}">
                     <div class="form-group" >
                         <label>Customer Name</label>
                         <input type="text" id="name" name="name" placeholder="Enter Customer Name"
@@ -45,3 +45,39 @@
 <script type="text/javascript" src="/js/edit_ajax.js"></script>
 </body>
 </html>
+
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card" style="background: dimgrey">-->
+<!--            <h2 class="text-center" style="color: black">Update Customer</h2>-->
+<!--            <div class="card-body" style="color: black">-->
+<!--                <form>-->
+<!--                    <div class="form-group" >-->
+<!--                        <label>Customer Name</label>-->
+<!--                        <input type="text" id="name" name="name" placeholder="Enter Customer Name"-->
+<!--                               class="form-control"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label>Customer Surname</label>-->
+<!--                        <input type="text" id="surname" name="surname" placeholder="Enter Customer Surname"-->
+<!--                               class="form-control"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label>Customer Age</label>-->
+<!--                        <input type="text" id="age" name="age" placeholder="Enter Customer Age"-->
+<!--                               class="form-control"/>-->
+<!--                    </div>-->
+<!--                    <div class="box-footer">-->
+<!--                        <button id="edit" type="submit" class="btn btn-primary">-->
+<!--                            Submit-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <a th:href="@{/web/customers}" class="btn btn-primary btn-sm mb-3">Return the Customers List</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="/js/edit_ajax.js"></script>-->
