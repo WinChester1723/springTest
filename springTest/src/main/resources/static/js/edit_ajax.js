@@ -6,6 +6,7 @@ $(document).ready(function (){
         let id = $('#id').val()
 
         let data = {}
+        data.id = id
         data.name = name
         data.surname = surname
         data.age = age

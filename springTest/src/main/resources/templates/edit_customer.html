@@ -15,7 +15,7 @@
             <h2 class="text-center" style="color: black">Update Customer</h2>
             <div class="card-body" style="color: black">
                 <form>
-                    <input type="hidden" id="id"/>
+                    <input type="hidden" id="id" th:href="${id}"/>
                     <div class="form-group" >
                         <label>Customer Name</label>
                         <input type="text" id="name" name="name" placeholder="Enter Customer Name"

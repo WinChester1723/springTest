@@ -36,7 +36,7 @@ public class CustomerService {
         CustomerMapper.INSTANCE.entityToDto(customerEntity);
     }
 
-    public CustomerDto editCustomer(Integer id, CustomerDto customerDto) {
+    public CustomerDto  editCustomer(Integer id, CustomerDto customerDto) {
         var exist = customerRepo.existsById(id);
         if (!exist) {
             throw new RuntimeException("Its Error");
