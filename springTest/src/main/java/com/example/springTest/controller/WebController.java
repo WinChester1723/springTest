@@ -1,20 +1,17 @@
 package com.example.springTest.controller;
 
-import com.example.springTest.model.CustomerDto;
-import com.example.springTest.service.CustomerService;
+import com.example.springTest.service.CustomerServiceImp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Controller
 @RequestMapping("/web")
 public class WebController {
 
-    private CustomerService customerService;
+    private CustomerServiceImp customerService;
 
-    public WebController(CustomerService customerService) {
+    public WebController(CustomerServiceImp customerService) {
         this.customerService = customerService;
     }
 

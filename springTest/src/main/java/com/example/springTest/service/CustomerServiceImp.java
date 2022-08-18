@@ -9,14 +9,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class CustomerService {
+public class CustomerServiceImp implements CustomerServiceInter{
 
     private CustomerRepo customerRepo;
 
-    public CustomerService(CustomerRepo customerRepo) {
+    public CustomerServiceImp(CustomerRepo customerRepo) {
         this.customerRepo = customerRepo;
     }
 
+    @Override
     public List<CustomerDto> getAllCustomerList() {
         var customerEntity = customerRepo.findAll();
         var customerDto = customerEntity.stream()
@@ -25,16 +26,19 @@ public class CustomerService {
         return customerDto;
     }
 
+    @Override
     public CustomerDto getCustomerById(Integer id) {
         var customerEntity = customerRepo.findById(id).orElseThrow();
         return CustomerMapper.INSTANCE.entityToDto(customerEntity);
     }
+    @Override
 
     public void createCustomer(CustomerDto customerDto) {
         var customerEntity = CustomerMapper.INSTANCE.dtoToEntity(customerDto);
         customerRepo.save(customerEntity);
         CustomerMapper.INSTANCE.entityToDto(customerEntity);
     }
+    @Override
 
     public CustomerDto  editCustomer(Integer id, CustomerDto customerDto) {
         var exist = customerRepo.existsById(id);
@@ -50,6 +54,7 @@ public class CustomerService {
         return CustomerMapper.INSTANCE.entityToDto(customerEntity);
     }
 
+    @Override
     public void deleteById(Integer id) {
         customerRepo.deleteById(id);
     }
