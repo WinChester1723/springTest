@@ -1,7 +1,7 @@
 package com.example.springTest.controller;
 
 import com.example.springTest.model.CustomerDto;
-import com.example.springTest.service.CustomerService;
+import com.example.springTest.service.CustomerServiceImp;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.List;
 @RequestMapping("/main")
 public class MainController {
 
-    private CustomerService customerService;
+    private CustomerServiceImp customerService;
 
-    public MainController(CustomerService customerService) {
+    public MainController(CustomerServiceImp customerService) {
         this.customerService = customerService;
     }
 
