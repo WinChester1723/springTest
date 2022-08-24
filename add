@@ -1,0 +1,47 @@
+[33mcommit 5b30d7b60c60dbc76d559cc092def0533ec106ea[m[33m ([m[1;36mHEAD -> [m[1;32mthread1[m[33m)[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Thu Aug 18 15:21:07 2022 +0400
+
+    some practice git and create interface
+
+[33mcommit c56b9b9dcb3c4344c01b171af4d33e81ded5ba0a[m[33m ([m[1;31morigin/thread1[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Mon Aug 8 00:04:37 2022 +0400
+
+    fixed edit_ajax.js and edit_customer.html
+
+[33mcommit ad1a64843668efd9daeada2c4d84673eab354069[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Tue Aug 2 01:34:33 2022 +0400
+
+    fixed edit_ajax.js and edit_customer.html
+
+[33mcommit 82d3719d1c072adedd30e9bfd9a841264b84bb24[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Fri Jul 22 14:00:37 2022 +0400
+
+    error, cant use add method
+
+[33mcommit 9f438295610ecbed55f6c53d1e8715de368b4676[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Fri Jul 22 01:20:18 2022 +0400
+
+    error, cant use add method
+
+[33mcommit e2d43d04317bd77b44687b29c7922a0b8ac086e4[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Wed Jul 20 01:18:00 2022 +0400
+
+    vvel nekotorie izmenenie v ajax i dobavil method put
+
+[33mcommit 93ca11f43df1e82575d4e901b9cd714631369715[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Fri Jul 15 05:51:39 2022 +0400
+
+    ya privel v izmenenie edit a takje dobavil delete metod
+
+[33mcommit 9e13ac4a8f7c0acdae8e0dbb64c3d411bbdbb9cd[m
+Author: Pasha <qordon23@gmail.com>
+Date:   Fri Jul 15 05:00:41 2022 +0400
+
+    Initial commit
